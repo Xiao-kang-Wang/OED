@@ -29,6 +29,17 @@ Upon completion, a folder named ```expert_sample``` will be created in ```./out_
 
 The result is a csv file named by the configuration and has the order of each culture condition selected by expert sampling.
 
+### Code architecture
+In this dir, ```./code/workhorse```, there are seven R scripts as follows. In ```main.R```, an object of the ```Simulate``` class is defined according to a configuration determined by a command line argument. The defintion of the ```Simulate``` class is defined in ```OOPGP.R```. The major method in the ```Simulate``` class is the ```simulate``` method. All the other methods and functions in other files are for supporting the ```simulate``` method of the ```Simulate``` class.
+
+
+├── add_noise.R
+├── main.R
+├── max_dist.R
+├── OOPGP.R
+├── prepare_data.R
+├── screen_index_helper.R
+└── update_train_pool.R
 
 
 
