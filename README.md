@@ -12,7 +12,7 @@ Culutre condition: "Chlorexidine","Phenol","H2O2","Isopropanol","Bezalkonium_chl
 
 Gene expression profile"thrA","thrB"
 ### Running
-* Step1: generate configuration files to run OED.
+* Step1: generate a file that include many configurations to run OED.
   ```
   cd generate_setting
   Rscript expert_sampling.R
@@ -25,16 +25,11 @@ cd code
 bash run_one_setting.sh
 ```
 
-Upon completion, ```pred.csv``` will contain the predicted protein identification probabilities.
+Upon completion, a folder named ```expert_sample``` will be created in ```./out_data```. The folder has the same name as the Rscript used for generating configurations in Step 1. Inside the folder, ```expert_sample```, there are a folder for each sampling approach.
 
-### Benchmark Datasets
-There are [7 example datasets](https://github.com/ameenetemady/DeepPep/tree/master/data) (used for benchmarking in the paper). Each dataset is generated from MS/MS raw files using TPP pipeline.
 
-### Citation
- M. Kim, A. Eetemadi, and I. Tagkopoulos, “DeepPep: deep proteome inference from peptide profiling”, PLoS Computational Biology (2017) *under review*
 
-### Licence
-See the [LICENSE](./LICENSE) file for license rights and limitations (Apache2.0).
+
 
 ### Acknowledgement
-This work was supported by a grant from Mars, Inc. and NSF award 1516695.
+This work was supported by an NSF award.
