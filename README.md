@@ -25,8 +25,9 @@ cd code
 bash run_one_setting.sh
 ```
 
-Upon completion, a folder named ```expert_sample``` will be created in ```./out_data```. The folder has the same name as the Rscript used for generating configurations in Step 1. Inside the folder, ```expert_sample```, there are a folder for each sampling approach.
+Upon completion, a folder named ```expert_sample``` will be created in ```./out_data```. The folder has the same name as the Rscript used for generating configurations in Step 1. Inside the folder, ```expert_sample```, there is a folder for each sampling approach.
 
+The result is a csv file named by the configuration and has the order of each culture condition selected by expert sampling.
 
 
 
