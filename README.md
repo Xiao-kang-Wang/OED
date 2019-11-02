@@ -1,6 +1,6 @@
 ### What is OPEX?
 
-DeepPep, is a **protein identification** software which uses deep-convolutional neural network to predict the protein set from a proteomics mixture, given the sequence universe of possible proteins and a target peptide profile.
+OPEX is an optimal expression design framework to help biologist to select the most information experiments to conduct given the experiments conducted up to now. This repo demonstrates the application of OPEX on collecting gene expression data of <em>E. coli<em> under the stress of antibiotic and biocide.
 
 ### Dependencies
 * [mlegp](https://cran.r-project.org/web/packages/mlegp/index.html)
