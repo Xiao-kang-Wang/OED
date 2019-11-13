@@ -1,6 +1,6 @@
 ### What is OPEX?
 
-OPEX is an optimal expression design framework to help biologist to select the most information experiments to conduct given the experiments conducted up to now. This repo demonstrates the application of OPEX on collecting gene expression data of <em>E. coli<em> under the stress of antibiotic and biocide.
+OPEX is an optimal expression design framework to help biologists to select the most information experiments to conduct given the experiments conducted up to now. This repo demonstrates the application of OPEX on collecting gene expression data of <em>E. coli<em> under the stress of various antibiotics and biocides.
 
 ### Dependencies
 * [mlegp](https://cran.r-project.org/web/packages/mlegp/index.html)
@@ -8,7 +8,9 @@ OPEX is an optimal expression design framework to help biologist to select the m
 ### Structure of this project
 
 ### Input data
-Culutre condition: "Chlorexidine","Phenol","H2O2","Isopropanol","Bezalkonium_chloride","Ethanol","Glutaraldehyde","Percetic_acid","Sodium_hypochlorite","Povidone_iodine","Kanamycin","Rifampicin","Norfloxacin","Ampicillin".
+The input data is a table, in which the first 14 columns defines a culture conditions in each row and the other 1123 columns represents a gene expression profile in each row. (Genes that did not have a sufficient sequecing depth were excluded). 
+
+A culutre condition is defined by a binary vecotr, representing the presence of 4 antibiotics and 10 biocides: ```Chlorexidine, Phenol, H2O2, Isopropanol, Bezalkonium_chloride, Ethanol, Glutaraldehyde, Percetic_acid, Sodium_hypochlorite, Povidone_iodine, Kanamycin, Rifampicin, Norfloxacin, Ampicillin```
 
 Gene expression profile"thrA","thrB"
 ### Running
@@ -50,4 +52,4 @@ In this dir, ```./code/workhorse```, there are seven R scripts as follows. In ``
 
 
 ### Acknowledgement
-This work was supported by an NSF award.
+This work was supported by an NSF award (#1743101).
