@@ -10,9 +10,8 @@ OPEX is an optimal expression design framework to help biologists to select the 
 ### Input data
 The input data is a table, in which the first 14 columns defines a culture conditions in each row and the other 1123 columns represents a gene expression profile in each row. (Genes that did not have a sufficient sequecing depth were excluded). 
 
-A culutre condition is defined by a binary vecotr, representing the presence of 4 antibiotics and 10 biocides: ```Chlorexidine, Phenol, H2O2, Isopropanol, Bezalkonium_chloride, Ethanol, Glutaraldehyde, Percetic_acid, Sodium_hypochlorite, Povidone_iodine, Kanamycin, Rifampicin, Norfloxacin, Ampicillin```
+A culutre condition is defined by a binary vecotr, representing the presence of 10 biocides and 4 antibiotics: ```Chlorexidine, Phenol, H2O2, Isopropanol, Bezalkonium_chloride, Ethanol, Glutaraldehyde, Percetic_acid, Sodium_hypochlorite, Povidone_iodine, Kanamycin, Rifampicin, Norfloxacin, Ampicillin```
 
-Gene expression profile"thrA","thrB"
 ### Running
 * Step1: generate a file that include many configurations to run OED.
   ```
